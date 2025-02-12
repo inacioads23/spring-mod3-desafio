@@ -8,11 +8,12 @@
 		<version>3.4.2</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+	
 	<groupId>com.devsoft</groupId>
 	<artifactId>dsclient</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>dsclient</name>
-	<description>Project for Spring Boot</description>
+	<description>DSClient Devsoft</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -45,6 +46,11 @@
 			<scope>runtime</scope>
 		</dependency>
 		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
@@ -68,6 +74,12 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>3.1.0</version><!--$NO-MVN-MAN-VER$ -->
 			</plugin>
 		</plugins>
 	</build>
