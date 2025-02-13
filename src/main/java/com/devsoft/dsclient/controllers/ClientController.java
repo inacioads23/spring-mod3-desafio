@@ -1,5 +1,7 @@
 package com.devsoft.dsclient.controllers;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -21,5 +23,11 @@ public class ClientController {
 		ClientDTO dto = service.findById(id);
 		return dto;
 	}
+	
+	@GetMapping
+	public List<ClientDTO> findAll() {
+		return service.findAll();
+	}
+	
 
 }
