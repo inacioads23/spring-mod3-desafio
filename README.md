@@ -1,3 +1,10 @@
+<style>
+color{
+    color:red;
+}
+</style>
+
+
 # Desafio módulo 3 - Spring: CRUD de clientes
 
 Criar um projeto Spring Boot contendo um CRUD completo de web services REST para acessar um recurso de clientes, contendo as cinco operações básicas aprendidas no capítulo:
@@ -23,6 +30,6 @@ Um cliente possui nome, CPF, renda, data de nascimento, e quantidade de filhos. 
 	- Data de nascimento: não pode ser data futura (dica: use @PastOrPresent)
 
 <p>
-<span style="color: #ff0000 font-weight: bold">Atenção:</span> lembre-se de que por padrão a JPA transforma nomes de atributos em camelCase para snake_case. Assim, o campo birthDate acima será criado no banco de dados como birth_date, então seu script SQL deverá seguir este padrão.</p>
+<color>Atenção:</<color>> Lembre-se de que por padrão a JPA transforma nomes de atributos em camelCase para snake_case. Assim, o campo birthDate acima será criado no banco de dados como birth_date, então seu script SQL deverá seguir este padrão.</p>
 
-**Atenção:** cuidado para não salvar no seu projeto arquivos e pastas que não devem ser salvas no Git, tais como a pasta .metadata do Eclipse ou .idea do Intellij.
+**Atenção:** Não salvar no seu projeto arquivos e pastas que não devem ser salvas no Git, tais como a pasta .metadata do Eclipse ou .idea do Intellij.
