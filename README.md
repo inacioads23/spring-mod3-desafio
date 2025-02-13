@@ -18,8 +18,7 @@ Um cliente possui nome, CPF, renda, data de nascimento, e quantidade de filhos. 
 
 **Seu projeto deverá tratar as seguintes exceções:**
 	
-	* Id não encontrado (para GET por id, PUT e DELETE), retornando código 404.\
-	
-	* Erro de validação, retornando código 422 e mensagens customizada para cada campo inválido. As regras de validação são:\
-		- Nome: não pode ser vazio\
-		- Data de nascimento: não pode ser data futura (dica: use @PastOrPresent)
+* Id não encontrado (para GET por id, PUT e DELETE), retornando código 404.	
+* Erro de validação, retornando código 422 e mensagens customizada para cada campo inválido. As regras de validação são:
+	- Nome: não pode ser vazio
+	- Data de nascimento: não pode ser data futura (dica: use @PastOrPresent)
