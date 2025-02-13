@@ -1,7 +1,6 @@
 package com.devsoft.dsclient.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
@@ -14,6 +13,7 @@ import com.devsoft.dsclient.repositories.ClientRepository;
 import com.devsoft.dsclient.services.exceptions.ResourceNotFoundException;
 
 import jakarta.persistence.EntityNotFoundException;
+
 
 @ Service
 public class ClientService {
