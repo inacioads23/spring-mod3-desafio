@@ -29,7 +29,6 @@ Um cliente possui nome, CPF, renda, data de nascimento, e quantidade de filhos. 
 	- Nome: não pode ser vazio
 	- Data de nascimento: não pode ser data futura (dica: use @PastOrPresent)
 
-<p>
-<color>Atenção:</color> Lembre-se de que por padrão a JPA transforma nomes de atributos em camelCase para snake_case. Assim, o campo birthDate acima será criado no banco de dados como birth_date, então seu script SQL deverá seguir este padrão.</p>
+<color>Atenção:</color> Lembre-se de que por padrão a JPA transforma nomes de atributos em camelCase para snake_case. Assim, o campo birthDate acima será criado no banco de dados como birth_date, então seu script SQL deverá seguir este padrão.
 
 **Atenção:** Não salvar no seu projeto arquivos e pastas que não devem ser salvas no Git, tais como a pasta .metadata do Eclipse ou .idea do Intellij.
