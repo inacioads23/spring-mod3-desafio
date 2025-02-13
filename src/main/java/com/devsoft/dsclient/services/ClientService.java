@@ -1,7 +1,5 @@
 package com.devsoft.dsclient.services;
 
-import java.util.Optional;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -11,6 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 import com.devsoft.dsclient.dto.ClientDTO;
 import com.devsoft.dsclient.entities.Client;
 import com.devsoft.dsclient.repositories.ClientRepository;
+import com.devsoft.dsclient.services.exceptions.ResourceNotFoundException;
 
 @ Service
 public class ClientService {
@@ -20,10 +19,8 @@ public class ClientService {
 	
 	@Transactional(readOnly = true)
 	public ClientDTO findById(Long id) {
-		Optional<Client> result = repository.findById(id);
-		Client client = result.get();
-		ClientDTO dto = new ClientDTO(client);
-		return dto;
+		Client client = repository.findById(id).orElseThrow(()-> new ResourceNotFoundException("Recurso não encontrado"));
+		return new ClientDTO(client);
 	}
 	
 	@Transactional(readOnly = true)
