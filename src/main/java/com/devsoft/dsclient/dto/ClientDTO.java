@@ -4,12 +4,17 @@ import java.time.LocalDate;
 
 import com.devsoft.dsclient.entities.Client;
 
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.PastOrPresent;
+
 public class ClientDTO {
 	
 	private Long id;
+	@NotBlank(message = "Nome requerido")
 	private String name;	
 	private String cpf;
 	private Double income;
+	@PastOrPresent(message = "Não é permitida data posterior a data atual")
 	private LocalDate birthDate;
 	private Integer children;
 	
