@@ -25,3 +25,17 @@ Um cliente possui nome, CPF, renda, data de nascimento, e quantidade de filhos. 
 _**Atenção:** Lembre-se de que por padrão a JPA transforma nomes de atributos em camelCase para snake_case. Assim, **o campo birthDate acima será criado no banco de dados como birth_date, então seu script SQL deverá seguir este padrão.**_
 
 _**Atenção:**_ Não salvar no seu projeto arquivos e pastas que não devem ser salvas no Git, tais como a pasta .metadata do Eclipse ou .idea do Intellij.
+
+# Fazendo o teste do projeto
+**1)Importação do projeto**\
+Deve ser feito um simples clone do projeto Github, e importar e executar o mesmo na IDE sem necessidade de qualquer configuração especial
+
+**2) Testes manuais no Postman**\
+[Postman Online](https://www.postman.com/) \
+Através do uso do Postman serão executadas as requisições abaixo. Todas elas deverão funcionar corretamente:
+
+![Image 2](src/main/resources/image/image2.png)
+![Image 3](src/main/resources/image/image3.png)
+![Image 4](src/main/resources/image/image4.png)
+![Image 5](src/main/resources/image/image5.png)
+![Image 6](src/main/resources/image/image6.png)
