@@ -40,7 +40,7 @@ Através do uso do Postman serão executadas as requisições abaixo. Todas elas
 ![Image 5](src/main/resources/image/image5.png)\
 ![Image 6](src/main/resources/image/image6.png)
 
-**CHECKLIST:**
+**VERIFICAÇÕES ADICIONAIS:**
 1. Busca por id retorna cliente existente
 2. Busca por id retorna 404 para cliente inexistente
 3. Busca paginada retorna listagem paginada corretamente
